@@ -6,8 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/calculadora")
 public class CalculadoraController {
+
+    @GetMapping("/ola")
+    public String hello(){
+        return "Seja bem vindo ao Mini Curso de Jenkins!";
+    }
 
     @GetMapping("/somar/{a}/{b}")
     public int somar(@PathVariable int a, @PathVariable int b){
