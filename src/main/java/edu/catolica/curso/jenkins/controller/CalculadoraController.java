@@ -17,4 +17,9 @@ public class CalculadoraController {
     public int somar(@PathVariable int a, @PathVariable int b){
         return a+b;
     }
+
+    @GetMapping("/subtrair/{a}/{b}")
+    public int subtrair(@PathVariable int a, @PathVariable int b){
+        return a-b;
+    }
 }
