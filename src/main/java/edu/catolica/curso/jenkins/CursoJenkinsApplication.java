@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CursoJenkinsApplication extends SpringBootServletInitializer {
 
-	@GetMapping("/")
+	@GetMapping("/jenkins")
 	public String init(){
 		return "Bem vindo ao Mini Curso de Jenkins!!";
 	}
