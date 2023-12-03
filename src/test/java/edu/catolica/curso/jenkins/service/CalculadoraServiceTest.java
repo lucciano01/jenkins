@@ -31,7 +31,7 @@ public class CalculadoraServiceTest {
     public void shouldReturnSubtractionOfTwoNumbers(){
         int a = 2;
         int b = 2;
-        int result = 0;
+        int result = 5;
         Assertions.assertEquals(result, calculadoraService.subtrair(a,b));
     }
 }
