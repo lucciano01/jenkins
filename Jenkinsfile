@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage('Jenkinsfile Test'){
+        stage('Build'){
             steps{
-                sh 'echo Jenkinsfile ok!'
+                sh 'mvn clean package -DskipTests=true'
             }
         }
     }
